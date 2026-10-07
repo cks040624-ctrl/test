@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="간단한 개인 소개 웹사이트 샘플">
+  <title>My Space — 개인 소개</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="My Space 홈">my<span>.</span>space</a>
+    <nav aria-label="주요 메뉴">
+      <a href="#about">소개</a>
+      <a href="#projects">프로젝트</a>
+      <a href="#contact">연락하기</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">HELLO, WORLD 👋</p>
+        <h1>작은 아이디어를<br><span>멋진 결과</span>로 만듭니다.</h1>
+        <p class="intro">안녕하세요! 이곳은 나를 소개하고, 만든 것을 기록하는 작은 웹 공간입니다.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">프로젝트 보기 <span aria-hidden="true">↗</span></a>
+          <button class="button secondary" id="hello-button" type="button">인사하기</button>
+        </div>
+        <p class="message" id="hello-message" aria-live="polite"></p>
+      </div>
+      <div class="hero-art" aria-label="장식용 그래픽">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+        <div class="sun"></div>
+        <div class="art-card"><span>IDEA</span><strong>→</strong><span>MAKE</span></div>
+        <div class="spark spark-one">✳</div>
+        <div class="spark spark-two">✦</div>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE ABOUT ME</p>
+        <h2>배우고, 만들고,<br>계속 성장하기.</h2>
+      </div>
+      <p class="section-copy">새로운 것을 배우는 과정을 좋아합니다. 이 웹사이트는 HTML, CSS, JavaScript로 만든 첫 번째 샘플이며, 앞으로 새로운 프로젝트와 관심사를 하나씩 추가할 수 있습니다.</p>
+    </section>
+
+    <section class="section projects" id="projects">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">WHAT I'M BUILDING</p>
+          <h2>작은 프로젝트</h2>
+        </div>
+        <span class="section-index">01 — 03</span>
+      </div>
+      <div class="project-grid">
+        <article class="project-card card-lilac">
+          <span class="project-number">01</span><div class="project-icon">✳</div>
+          <h3>개인 웹사이트</h3><p>나를 소개하는 첫 번째 웹 페이지</p><span class="tag">HTML · CSS</span>
+        </article>
+        <article class="project-card card-yellow">
+          <span class="project-number">02</span><div class="project-icon">⌘</div>
+          <h3>아이디어 노트</h3><p>떠오르는 생각을 모으는 공간</p><span class="tag">PLANNING</span>
+        </article>
+        <article class="project-card card-blue">
+          <span class="project-number">03</span><div class="project-icon">↗</div>
+          <h3>다음 프로젝트</h3><p>이곳에 다음 도전을 기록할 예정</p><span class="tag">COMING SOON</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div><p class="eyebrow">LET'S CONNECT</p><h2>함께 멋진 것을<br>만들어 봐요.</h2></div>
+      <a class="button light" href="mailto:hello@example.com">이메일 보내기 <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand" href="#home">my<span>.</span>space</a>
+    <p>Made with curiosity · 2026</p>
+    <a href="#home">맨 위로 ↑</a>
+  </footer>
+</body>
+</html>
